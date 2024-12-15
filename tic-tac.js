@@ -22,4 +22,9 @@ function ticker() {
   // document.write(counter);
 }
 
+function stop() {
+  clearInterval(t);
+}
+
 let t = setInterval(ticker, 1000);
+setTimeout(stop, 10000)
